@@ -1,0 +1,19 @@
+.project-link {
+  text-decoration: none;
+  color: black
+}
+
+.project-link:hover {
+  color:black;
+  text-decoration: underline;
+}
+
+.icon {
+  text-decoration: none; 
+  color: black;
+}
+
+.icon:hover {
+    color: #59b300;
+    text-decoration: none;
+}

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <base href="https://seyongpark.com/">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Seyong Park</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+  <body class="bg-body-tertiary">
+    <div class="container-fluid d-flex flex-column" style="height: 100vh">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+            <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                <div class="navbar-nav nav-underline">
+                <a class="nav-link" aria-current="page" href="index.html">About Me</a>
+                <a class="nav-link active" href="projects.html">Projects</a>
+                <a class="nav-link" href="resume.pdf">Resume</a>
+                </div>
+            </div>
+            </div>
+        </nav>
+
+        <div class="container justify-content-center text-left mt-5 mb-5">
+            <div class="row">
+                <div class="col-6">
+                    <h2><a class="project-link" href="https://github.com/syp2001/gravitational-lensing">Gravitational Lensing</a></h2>
+                    
+                    <p class="mt-5">
+                    Gravitational lensing is a prediction of Einstein's theory of general relativity, in which massive objects can act as lenses and bend light by inducing curvature in the spacetime around them.
+                    The image on the right shows Earendel, the most distant star ever observed, which was made visible by the gravitational lensing effect of a large galaxy cluster in the foreground.
+                    The star, along with the galaxy in which it resides, has been magnified into a long streak. The animation below is an attempt to recreate this image using a computational simulation.
+                    It shows how the lensed image changes as a simulated source galaxy is rotated. The animation was generated in python using the pyautolens library, with data from the Hubble Space Telescope.
+                    This kind of gravitational lensing is particularly exciting because it provides a way of directly observing the evolution of stars and galaxies in the early universe which would otherwise be too faint to see.
+                    </p>
+                </div>
+                <div class="col-6 text-center">
+                    <figure class="figure">
+                        <img src="earendel.jpg" width="50%" class="figure-img rounded" alt="earendel">
+                        <figcaption class="figure-caption">Image Credit: NASA</figcaption>
+                    </figure>
+                    <div class="row embed-responsive embed-responsive-21by9">
+                        <video controls preload="auto" autoplay loop>
+                            <source src="rotate.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container justify-content-center text-left mt-1 mb-5">
+            <div class="row">
+                <div class="col-6">
+                    <h2><a class="project-link" href="https://github.com/syp2001/KerrGeoPy">KerrGeoPy</a></h2>
+                    <p class="mt-5">
+                    KerrGeoPy is a python library for computing orbital trajectories around a spinning black hole. 
+                    It implements the analytical solutions for plunging orbits from Dyson and van de Meent (<a href="https://arxiv.org/abs/2302.03704" class="project-link">arXiv:2302.03704</a>), 
+                    as well as solutions for non-plunging orbits from Fujita and Hikida (<a href="https://arxiv.org/abs/0906.1420" class="project-link">arXiv:0906.1420</a>).
+                    The library also provides a set of methods for computing constants of motion and orbital frequencies, and can generate plots/animations like the ones shown here.
+                    </p>
+                </div>
+                <div class="col-3">
+                    <div class="row embed-responsive embed-responsive-1by1">
+                        <video controls preload="auto" autoplay loop>
+                            <source src="https://github.com/syp2001/KerrGeoPy/assets/38138782/e8a265f2-550c-4a5e-9383-befbac5e7004" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="row embed-responsive embed-responsive-1by1">
+                        <video controls preload="auto" autoplay loop>
+                            <source src="https://github.com/syp2001/KerrGeoPy/assets/38138782/25622db9-f144-4ba5-b9a9-b099f3ddb683" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
